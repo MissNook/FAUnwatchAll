@@ -28,7 +28,7 @@
 
         for(var i=0;i<allATag.length;i++){
             var hrefVal = allATag[i].getAttribute("href");
-            if(hrefVal != null && hrefVal.indexOf("unwatch") != -1  && hrefVal.indexOf("skle") != -1){
+            if(hrefVal != null && hrefVal.indexOf("unwatch") != -1){
                 window.open(hrefVal, '_blank');
             }
         }
