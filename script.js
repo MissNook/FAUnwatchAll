@@ -11,13 +11,15 @@
 (function() {
     'use strict';
     var headerTab = document.getElementsByClassName("cat links")[0];
-    var buttonUnwatch = createButton(headerTab, unwatch);
+    createButton(headerTab, unwatch);
 
     function createButton(context, func){
         var button = document.createElement("input");
         button.type = "button";
         button.value = "Unwatch this whole page";
         button.onclick = func;
+        button.className = "alt1";
+        button.style = "padding:0 10px;margin-left:20px";
         context.appendChild(button);
     }
 
